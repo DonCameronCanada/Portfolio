@@ -5,13 +5,14 @@
   box-sizing: border-box;
 }
 
-intro {
-  position: absolute;
-  text-align: left;
-  z-index: 10;
+body {
+  background-color: #000;   /* black background */
+  color: #eee;              /* off‑white default text */
 }
 
+
 .intro h1 {
+  color: #eee;              /* specifically make your name off‑white */
   font-family: "Stack Sans Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -34,42 +35,30 @@ intro {
 }
 
 
-projects {
-  font-family: 'Inter', sans-serif;
-  background: #fff;
-  color: #111;
-  font-size: 18px;
+
+.about {
+  font-family: "Stack Sans Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1rem;
   line-height: 1.6;
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 20px 40px 10px 20px;
+  color: #ccc;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin-top: 4rem; /* or try 6rem for more space */
 }
 
 
-about {
-  position: absolute;
-  top: 4rem;
-  left: 2rem;
-  font-weight: 500;
-  font-size: 4rem;
-  text-align: left;
-  z-index: 10;
-}
 
-
-h3 {
-  font-weight: 200;
-  font-size: 2rem;
-  text-align: left;
-}
-
-p {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-section {
-  margin-bottom: 6rem;
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* controls the space between each .project-gallery block */
+  width: 70%;
+  margin: 0 auto; /* centers the gallery horizontally */
 }
 
 .project-gallery {
@@ -94,7 +83,14 @@ section {
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 3px solid #fff;          /* adds a white border */
 }
+
+.project-gallery img:hover {
+  transform: scale(1.05);          /* makes the image slightly bigger */
+}
+
 
 .caption {
   margin-top: 1rem;
