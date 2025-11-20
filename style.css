@@ -18,8 +18,8 @@ body {
   font-weight: 500;
   font-size: 4rem;
   font-style: normal;
-  text-align: left;
-  margin: 20px 40px 10px 20px;
+  text-align: center;
+  margin: 20px 0 10px 0;
 }
 
 
@@ -29,9 +29,9 @@ body {
   font-weight: 300;
   font-size: 1.5rem;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   color: #068882;
-  margin: 10px 0 30px 20px;
+  margin: 10px 0 30px 0;
 }
 
 
@@ -73,8 +73,6 @@ body {
   border: 6px solid #fff;   
   transform: scale(1.05);          /* makes the image slightly bigger */
 }
-
-
 
 .about {
   font-family: "Stack Sans Headline", sans-serif;
